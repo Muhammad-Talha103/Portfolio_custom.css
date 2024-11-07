@@ -1,0 +1,154 @@
+.services-page {
+    background-color: #ffffff;
+    z-index: 30;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .services-header {
+    background-color: #2dd4bf;
+    color: #ffffff;
+    padding: 4rem 1rem;
+    width: 100%;
+  }
+  
+  .services-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .services-subtitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .services-main {
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  @media (min-width: 640px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .service-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, border 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    border: 2px solid #2dd4bf;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-description {
+    color: #666666;
+    text-align: center;
+  }
+  
+  .services-footer {
+    background-color: #2dd4bf;
+    color: #ffffff;
+    padding: 4rem 1rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-heading {
+    font-size: 1.875rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-description {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-button {
+    background-color: #ffffff;
+    color: #2dd4bf;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-button:active {
+    transform: scale(0.95);
+  }
+  
+  @media (min-width: 640px) {
+    .services-title {
+      font-size: 3rem;
+    }
+  
+    .services-subtitle {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .services-title {
+      font-size: 3.5rem;
+    }
+  
+    .footer-heading {
+      font-size: 2rem;
+    }
+  }
